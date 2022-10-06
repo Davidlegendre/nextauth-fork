@@ -50,7 +50,7 @@ const SignIn: NextPage = (props): JSX.Element => {
 
 export default SignIn;
 
-export async function getServerSideProps(Context) {
+export async function getServerSideProps(Context: any) {
 
   const session = await getSession(Context)
 
